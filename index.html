@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BMS Event Rule Standard</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1><a href="./"><img src="title.svg" class="tim"></a></h1>
+    <nav class="menu-nav">
+        <ul>
+            <li>
+                <a href="./BRS.html">ARCHIVE</a>
+            </li>
+            <li>
+                <a href="./make.html">USE</a>
+            </li>
+            <li>
+                <a href="./contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2 id="about">BRSとは</h2>
+        <p>
+        　BRS(Bms event Rule Standard)は、BMSイベントにおける<b>最小限のルールを共通化した規格</b>です。BMSイベントのルールページでBRS規格を
+        宣言することで、盗作の禁止や先行アーカイブ登録の禁止をはじめとした<b>ごく基本的なルール</b>を簡単に設定することが
+        できます。<br>
+        　主に、BMSイベントにおける基礎的ルール表記の<b>簡略化と、明文化、統一化</b>を目的としています。
+        </p>
+        <a href="./BRS/002.html" class="intense-button">
+            <img src="BRS_ex.png" class="im" width="60" height="60">
+            <span>最新のBRSを表示</span>
+        </a>
+    </section>
+    <section>
+        <h2>使用例</h2>
+        <p>
+            　BMSイベントのルール欄でBRSを利用することで、下の例のように煩雑で書き漏らしがちなルールを短文かつ明確・正確に規定することができます。
+        </p>
+    </section>
+<table style="width:100%; margin-top: 50px">
+    <tr>
+        <th>基本ルールが多すぎて煩雑になる例</th>
+        <th>BRSを利用して基本ルールを省略した例</th>
+    </tr>
+<tr><td width="50%">
+    <ul class="rule-example">
+        <li class="section">
+            <p class="h">BMS投稿について</p>
+            <ul class="list">
+                <li class="item">ジャンルを「JAZZ」としたBMSを投稿してください</li>
+                <li class="item">正常に再生可能なBMSであること（LR2で再生可能を推奨します）</li>
+                <li class="item">未完成品やダウンロードリンクの無い作品の投稿は失格となります</li>
+                <li class="item">キー音無しBMSは禁止とします</li>
+                <li class="item">BMSとしてすでに発表済みの作品は禁止とします</li>
+            </ul>
+        </li>
+        <li class="section">
+            <p class="h">インプレッションについて</p>
+            <ul>
+                <li class="item">インプレッションは0 - 100ptsで評点をつけます</li>
+                <li class="item">作品に無関係な発言は禁止します</li>
+                <li class="item">自作自演による水増し行為は禁止します</li>
+                <li class="item">楽曲ではなく、個人の言動を評価の対象にする行為を禁止します</li>
+            </ul>
+        </li>
+    </ul>
+</td><td>
+    <ul class="rule-example">
+            <li class="section">
+                <p class="h">BMS投稿について</p>
+                <ul class="list">
+                    <li class="item">ジャンルを「JAZZ」としたBMSを投稿してください</li>
+                    <li class="item">BRS規格に準拠したBMSとします <img src="BRS_ex.png" width="24" height="24"></li>
+                </ul>
+            </li>
+            <li class="section">
+                <p class="h">インプレッションについて</p>
+                <ul class="list">
+                    <li class="item">インプレッションは0 - 100ptsで評点をつけます</li>
+                    <li class="item">BRS規格に準拠したBMSとします <img src="BRS_ex.png" width="24" height="24"></li>
+                </ul>
+            </li>
+        </ul>
+</td></tr></table>
+<section>
+    <h2>利用方法</h2>
+    <p>
+    　USEページでHTMLコードを生成し、イベントのルールページに貼り付けてください。HTMLが使用できない場合は、使用するバージョンのBRSルールページのリンクを表記してください。
+    </p>
+    <a href="./make.html" class="intense-button">
+        <span>HTMLコードを生成</span>
+    </a>
+</section>
+</main>
+</div><!-- wrapper -->
+</body>
+</html>
