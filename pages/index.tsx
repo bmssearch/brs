@@ -1,5 +1,5 @@
-import Head from "next/head";
 import { NavigationBar } from "../components/NavigationBar";
+import React from "react";
 import layout from "./layout.module.scss";
 import styles from "./index.module.scss";
 
@@ -20,8 +20,8 @@ export default function Home() {
             　主に、BMSイベントにおける基礎的ルール表記の
             <b>簡略化・明文化</b>を目的としています。
           </p>
-          <a href="/brs/002" className={styles.dominant_button}>
-            <img src="/badges/002.png" className="im" width="60" height="60" />
+          <a href="/brs/003" className={styles.dominant_button}>
+            <img src="/badges/003.png" className="im" width="60" height="60" />
             <span>最新のBRSを表示</span>
           </a>
         </section>

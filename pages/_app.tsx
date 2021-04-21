@@ -3,6 +3,7 @@ import "./global.scss";
 import { AppProps } from "next/dist/next-server/lib/router/router";
 import Head from "next/head";
 import { MDXProvider } from "@mdx-js/react";
+import React from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
