@@ -1,17 +1,17 @@
-import { useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 
 import { NavigationBar } from "../components/NavigationBar";
 import layout from "./layout.module.scss";
 import styles from "./use.module.scss";
 
-type Version = "001" | "002";
+type Version = "001" | "002" | "003";
 
 const html = (version: Version, size: number) => {
   return `<a href="https://brs.bmssearch.net/${version}" target="_blank" rel="noopener noreferrer"><img src="https://brs.bmssearch.net/badges/${version}.png" width="${size}" height="${size}" alt="BRS ver.${version}"></a>`;
 };
 
 export default function Use() {
-  const [version, setVersion] = useState<Version>("002");
+  const [version, setVersion] = useState<Version>("003");
   const [size, setSize] = useState(40);
 
   const codeRef = useRef<HTMLTextAreaElement>(null);
@@ -36,7 +36,8 @@ export default function Use() {
                   }}
                   className={styles.version}
                 >
-                  <option value="002">Version.002 (最新)</option>
+                  <option value="003">Version.003 (最新)</option>
+                  <option value="002">Version.002</option>
                   <option value="001">Version.001</option>
                 </select>
               </dd>
