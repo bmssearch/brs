@@ -17,13 +17,13 @@ export default function Abbr() {
           </p>
           <ul>
             <li>
-              <img src="/badges/real.png" width="30" />
-              <img src="/badges/real_jp.png" width="30" />
+              <img src="/badges/R.png" width="30" />
+              <img src="/badges/RJ.png" width="30" />
               <span>本名義による投稿に限る</span>
             </li>
             <li>
-              <img src="/badges/fake.png" width="30" />
-              <img src="/badges/fake_jp.png" width="30" />
+              <img src="/badges/F.png" width="30" />
+              <img src="/badges/FJ.png" width="30" />
               <span>偽名による投稿に限る</span>
             </li>
             <li>
@@ -31,7 +31,7 @@ export default function Abbr() {
               <span>一人一曲に限る</span>
             </li>
             <li>
-              <img src="/badges/original.png" width="30" />
+              <img src="/badges/org.png" width="30" />
               <span>オリジナル楽曲に限る</span>
             </li>
           </ul>
