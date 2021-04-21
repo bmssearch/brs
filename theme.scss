@@ -1,0 +1,47 @@
+@mixin pc {
+  @media screen and (min-width: 415px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+$MIDNIGHT_900: var(--color-midnight-900);
+$MIDNIGHT_700: var(--color-midnight-700);
+$MIDNIGHT_500: var(--color-midnight-500);
+$MIDNIGHT_400: var(--color-midnight-400);
+$MIDNIGHT_300: var(--color-midnight-300);
+$MIDNIGHT_100: var(--color-midnight-100);
+$MIDNIGHT_50: var(--color-midnight-50);
+
+$SCRIM: var(--color-scrim);
+
+$WHITE_900: var(--color-white-900);
+$WHITE_700: var(--color-white-700);
+$WHITE_100: var(--color-white-100);
+$WHITE_50: var(--color-white-50);
+
+$BORDER: var(--color-border);
+$BORDER_HEAVY: var(--color-border-heavy);
+$BORDER_WHITE: var(--color-border-white);
+
+$ACCENT: var(--color-accent);
+$ACCENT_50: var(--color-accent-50);
+$GRADIENT: var(--color-gradient);
+
+$RED: var(--color-red);
+$ERROR: var(--color-error);
+
+$SHADOW_SHALLOW: 0px 2px 12px rgba(0, 0, 0, 0.02);
+$SHADOW_CARD: 0px 4px 12px rgba(24, 93, 95, 0.06);
+$SHADOW_HOVER: 0px 2px 12px rgba(24, 93, 95, 0.2);
+
+$PC_MIN_WIDTH: 880px;
+$PC_MAX_WIDTH: 1200px;
+$PC_HORIZONTAL_PADDING: 40px;
+
+$SP_HORIZONTAL_PADDING: 20px;

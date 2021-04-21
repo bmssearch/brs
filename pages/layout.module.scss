@@ -1,0 +1,11 @@
+@import "../theme.scss";
+
+.wrapper {
+  max-width: 800px;
+  padding: 0 40px 80px;
+  margin: 0 auto;
+
+  @include pc {
+    min-width: 600px;
+  }
+}
