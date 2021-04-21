@@ -1,0 +1,99 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
+
+  color: #39454f;
+  line-height: 1.95;
+  font-size: 17px;
+}
+
+ul,
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+a {
+  color: #00abad;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+h2:first-child {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+select,
+input {
+  border: 1px solid rgba(67, 80, 81, 0.4);
+  font-size: 17px;
+  font-family: inherit;
+  height: 2.4rem;
+  padding: 0 8px;
+  border-radius: 8px;
+  color: inherit;
+}
+
+textarea {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  font-family: inherit;
+  padding: 8px;
+  border: 1px solid rgba(67, 80, 81, 0.4);
+  border-radius: 8px;
+
+  &::selection {
+    color: inherit;
+    background: #b8efe9;
+  }
+}
+
+.required {
+  color: #4caf50;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #4caf50;
+    margin-right: 4px;
+    -webkit-mask-image: url("/icons/required.svg");
+    mask-image: url("/icons/required.svg");
+    mask-size: cover;
+  }
+}
+
+.prohibited {
+  color: #f44336;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -4px;
+    background-color: #f44336;
+    margin-right: 4px;
+    -webkit-mask-image: url("/icons/prohibited.svg");
+    mask-image: url("/icons/prohibited.svg");
+    mask-size: cover;
+  }
+}

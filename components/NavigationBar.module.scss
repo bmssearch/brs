@@ -1,0 +1,32 @@
+@import "../theme.scss";
+
+.header {
+  padding: 30px 0;
+
+  @include pc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: block;
+  width: 80px;
+}
+
+.nav {
+  ul {
+    display: flex;
+    padding: 0;
+  }
+
+  li:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+}

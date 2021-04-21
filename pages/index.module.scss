@@ -1,0 +1,63 @@
+@import "../theme.scss";
+
+.dominant_button {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  min-height: 48px;
+  border-radius: 30px;
+  margin: 40px auto 30px;
+  width: fit-content;
+  box-shadow: rgba(86, 101, 102, 0.3) 0 4px 30px -3px;
+  transition: background 100ms;
+  font-weight: bold;
+  color: inherit;
+
+  img {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background: rgba(86, 101, 102);
+    color: #fff;
+  }
+}
+
+.rules {
+  @include pc {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 24px;
+    grid-template-rows: auto auto;
+  }
+
+  .rule_example {
+    padding: 16px;
+    border: 1px solid rgba(67, 80, 81, 0.4);
+    border-radius: 6px;
+    color: #626f70;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .section {
+    padding: 10px 0;
+    list-style: none;
+  }
+  dt {
+    font-weight: bold;
+    margin-bottom: 8px;
+
+    @include sp {
+      margin-top: 64px;
+    }
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+  .item::before {
+    content: "-";
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "out",
+    "cleanUrls": true,
+    "redirects": [
+      {
+        "regex": "/BRS/(\\d+).html",
+        "destination": "/brs/:1",
+        "type": 301
+      },
+      {
+        "regex": "/BRS/(.*).png",
+        "destination": "/badges/:1.png",
+        "type": 301
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

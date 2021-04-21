@@ -1,0 +1,31 @@
+.form {
+  dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+}
+
+.size {
+  width: 80px;
+  margin-right: 4px;
+}
+
+.result {
+  margin-top: 64px;
+
+  .icon {
+    display: block;
+    width: fit-content;
+
+    img {
+      display: block;
+    }
+  }
+
+  .code {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+  }
+}

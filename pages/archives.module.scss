@@ -1,0 +1,19 @@
+.archives {
+  dt {
+    a {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+  }
+
+  dd {
+    margin-bottom: 64px;
+  }
+}
+
+.badge {
+  width: 32px;
+  margin-right: 4px;
+}
