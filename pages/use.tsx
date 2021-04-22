@@ -7,7 +7,7 @@ import styles from "./use.module.scss";
 type Version = "001" | "002";
 
 const html = (version: Version, size: number) => {
-  return `<a href="https://brs.bmssearch.net/${version}" target="_blank" rel="noopener noreferrer"><img src="https://brs.bmssearch.net/badges/${version}.png" width="${size}" height="${size}" alt="BRS ver.${version}"></a>`;
+  return `<a href="https://brs.bmssearch.net/brs/${version}" target="_blank" rel="noopener noreferrer"><img src="https://brs.bmssearch.net/badges/${version}.png" width="${size}" height="${size}" alt="BRS ver.${version}"></a>`;
 };
 
 export default function Use() {
