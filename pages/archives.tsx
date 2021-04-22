@@ -1,17 +1,9 @@
-import { useCallback, useRef, useState } from "react";
-
 import { NavigationBar } from "../components/NavigationBar";
+import React from "react";
 import layout from "./layout.module.scss";
 import styles from "./archives.module.scss";
 
 export default function Archives() {
-  const [size, setSize] = useState(40);
-
-  const codeRef = useRef<HTMLTextAreaElement>(null);
-  const onClickCode = useCallback(() => {
-    codeRef.current?.select();
-  }, []);
-
   return (
     <div className={layout.wrapper}>
       <NavigationBar />
@@ -20,6 +12,32 @@ export default function Archives() {
           <h1 id="about">ARCHIVES</h1>
 
           <dl className={styles.archives}>
+            <dt>
+              <a href="/brs/003">
+                <img
+                  className={styles.badge}
+                  src="/badges/003.png"
+                  alt="BRS ver.003"
+                />
+                <span>BRS Ver.003 (最新 2021/04/21)</span>
+              </a>
+            </dt>
+            <dd>
+              <ul>
+                <li>短縮アイコンを廃止しました。</li>
+                <li>
+                  必須再生環境をLunatic Rave 2 と beatoraja
+                  のいずれかとしました。
+                </li>
+                <li>
+                  BMSA, Musicbox,
+                  生MIDIデータの禁止を、近年では明示的に取り上げる必要のないものとして削除しました。
+                </li>
+                <li>主催者の裁量で不適切なBMSを判断できるようにしました。</li>
+                <li>BMS未プレイでのインプレッションを禁止しました。</li>
+              </ul>
+            </dd>
+
             <dt>
               <a href="/brs/002">
                 <img

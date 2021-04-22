@@ -3,6 +3,7 @@ import "./global.scss";
 import { AppProps } from "next/dist/next-server/lib/router/router";
 import Head from "next/head";
 import { MDXProvider } from "@mdx-js/react";
+import React from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -19,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:site_name" content="BRS" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <title>BRS -Bms event Rule Standard-</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
